@@ -601,7 +601,7 @@
         }
         .logo {
             width: 200px;
-            clip-path: inset(20px);
+            clip-path: inset(5px);
         }
         .social-icon {
             width: 40px;
