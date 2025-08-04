@@ -1,13 +1,16 @@
 :root {
-    --primary: #E63946; /* Lobster Red */
-    --primary-dark: #C5303B; /* Darker Lobster Red */
-    --text-dark: #2B2D42; /* Dark Slate Navy (great for headings) */
-    --text-light: #6D6875; /* Muted Grayish Lavender (subtext) */
-    --section-background: #F8F9FA; /* Soft Coastal White */
-    --accent-blue: #457B9D; /* Clam Shell Blue */
-    --accent-sand: #F1FAEE; /* Light Sand/Beach */
-    --checkered: url('https://www.transparenttextures.com/patterns/ps-neutral.png'); /* Light checkered pattern */
+  --primary: #8B2E2E;           /* Rich Brick Red – evokes BBQ, ribs, warmth */
+  --primary-dark: #5C1C1C;      /* Deeper version of the red for contrast */
+
+  --text-dark: #2E2E2E;         /* Clean, dark gray for high readability */
+  --text-light: #FFFFFF;        /* Pure white for buttons/hero areas */
+
+  --section-background: #FFF6F0;  /* Warm sand/cream tone – comforting + clean */
+  
+  --accent-blue: #3A77B0;       /* Contrasting soulful blue for links/CTAs */
+  --accent-sand: #E5CBA3;       /* Light tan/beige – complements soul food aesthetic */
 }
+
 
 * {
       box-sizing: border-box;
@@ -15,17 +18,21 @@
       padding: 0;
     }
 
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter, sans-serif';
       color: var(--text-dark);
       line-height: 1.6;
-      overflow-x: hidden;
-      background: var(--checkered);
       background-color: var(--primary);
     }
 
     h1, h2, h3 {
-        font-family: 'Pacifico', cursive;
+        font-family: 'Playfair Display', serif;
         color: var(--primary-dark);
     }
 
@@ -33,10 +40,7 @@
         font-size: clamp(1.5rem, 5vw, 3rem); 
     }
 
-    p {
-        color: var(--text-light);
-    }
-    
+   
     a {
       color: var(--primary);
       text-decoration: none;
@@ -47,7 +51,7 @@
     }
 
     header {
-      background: url('https://scontent-lga3-1.xx.fbcdn.net/v/t39.30808-6/500039406_1247725877355968_548052271306175463_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=4TVTFJt8cp0Q7kNvwGmpFmK&_nc_oc=AdkDmNmQMQZmS5bPTMdjCbtoEiS9qJFmcftP6Pv-kZzcrzIJeNdpguxnpeEu0kDAcsTDaSAl6s46i650QUT2ndVZ&_nc_zt=23&_nc_ht=scontent-lga3-1.xx&_nc_gid=zAi9Ex2rQ-1jeHp7PAb5lw&oh=00_AfRdz8W5n8BjlXptOZkVCTJiuA2eETprmHF69o_jJ16xVw&oe=689312CC') no-repeat center 5%/cover;
+      background: url('https://www.miamiherald.com/public/latest-news/rn230o/picture269109147/alternates/FREE_1140/MIA_DV8R0169') no-repeat center 50%/cover;
       height: 100vh;
       color: white;
       position: relative;
@@ -129,6 +133,7 @@
       margin: 3rem auto;
       padding: 40px 20px;
       background-color: var(--section-background);
+      color: var(--text-dark);
       text-align: center;
       border-radius: 12px;
     }
@@ -174,6 +179,15 @@
         text-align: center;
     }
 
+    #about img {
+        width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+  border-radius: 12px; /* optional: adds smooth rounded corners */
+  margin-top: 1rem;
+    }
+
     .quote-author {
         display: block;
         font-weight: bold;
@@ -191,7 +205,6 @@
     #menu {
       padding: 3rem 20px;
       width: 100%;
-      margin: auto;
       text-align: center;
     }
 
@@ -407,9 +420,6 @@
       background-color: var(--text-dark);
       color: white;
       text-align: center;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       flex-wrap: wrap;
       padding: 1.5rem 20px;
       font-size: 0.9rem;
